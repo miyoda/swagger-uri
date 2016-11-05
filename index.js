@@ -1,25 +1,36 @@
 'use strict';
 
-module.exports = function(db) {
+module.exports = function(db, swaggerDefinition) {
+  var extend = require('extend');
   var express = require('express');
+  var swaggerAdd = require('./utils/swagger-add');
   var router = express.Router();
 
-  router.get("/", function(req, res) {
-    res.status(200).send("AUTH BASE");
-  });
+  swaggerDefinition = extend({
+    "info": {
+        "title": "Auth API",
+        "description": "Auth microservice 4 social and local login",
+        "version": "1.0.0"
+    },
+    swagger: '2.0',
+    host: 'localhost:3000',
+    basePath: '/auth',
+    schemes: ['http'],
+    responses: {},
+    parameters: {},
+    securityDefinitions: {},
+    tags: []
+  }, swaggerDefinition);
 
-  var UserModel = require('./models/user')(db);
+  //static
+  router.use(express.static('static'));
 
-  var Resource = require('resourcejs');
-  var UserResource = Resource(router, '', 'user', UserModel).rest();
+  //crud - Basic API 4 models
+  swaggerAdd(swaggerDefinition, require('./routes/crud')(router, db));
 
-  var swaggerJson = require('./utils/resource-swagger-json')(UserResource);
-  router.get("/docs/json", function(req, res, next) {
-    res.json(swaggerJson);
-  });
+  //login - passport routes
+  swaggerAdd(swaggerDefinition, require('./routes/login')(router, db));
 
-  const swaggerUi = require('swagger-ui-express');
-  router.use('/docs/ui', swaggerUi.serve, swaggerUi.setup(swaggerJson));
-
+  require('./utils/swagger-setup')(router, swaggerDefinition);
   return router;
 };

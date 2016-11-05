@@ -11,7 +11,7 @@ module.exports = function(db) {
     fullname: {type: String },
   });
 
-  var UserModel = db.model('User', UserSchema);
+  db.modelUser = db.modelUser ? db.modelUser : db.model('User', UserSchema);
 
-  return UserModel;
+  return db.modelUser;
 };

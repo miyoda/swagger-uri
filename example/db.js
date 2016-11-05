@@ -4,15 +4,15 @@ var mongoUri = 'mongodb://localhost:27017/auth';
 var db = mongoose.createConnection(mongoUri);
 
 db.on('connected', function () {
-    console.log('Mongoose default connection open');
+    console.log('Mongoose connection open', mongoUri);
 });
 
 db.on('disconnected', function () {
-    console.log('Mongoose connection disconnected');
+    console.log('Mongoose connection '+mongoUri+' disconnected');
 });
 
 db.on('error', function (error) {
-    console.log('Mongoose connection error: ',error);
+    console.log('Mongoose connection '+mongoUri+' error: ',error);
 });
 
 module.exports = db;

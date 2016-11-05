@@ -4,8 +4,9 @@
   "description": "express microservice for local and social auth with passport and mongoose",
   "main": "index.js",
   "scripts": {
-    "server": "node server.js",
-    "dev": "nodemon server.js",
+    "server": "node example/app.js",
+    "debug": "node-debug example/app.js",
+    "dev": "nodemon example/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -32,10 +33,12 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "extend": "^3.0.0",
     "lodash": "^4.16.6",
     "mongoose": "^4.6.6",
     "resourcejs": "^1.4.1",
-    "swagger-ui-express": "^1.0.1"
+    "swagger-jsdoc": "^1.8.1",
+    "swagger-tools": "^0.10.1"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
