@@ -1,3 +1,11 @@
 language: node_js
 node_js:
-  - "4.3"
+- '4.3'
+deploy:
+  provider: npm
+  email: mmiyoda@gmail.com
+  api_key:
+    secure: D2wV3jk9Q4ahgIaq/Wf60uzR5PFrfes6UzDG5Rusa7Z5dWOhq/9VujL24wFhaplznh+L5OR0sOm95ZcQ+d2Ug/9axxJgJ4V7vsDWo/kl9oH3YUtAaSEFBT5GvSwGnEf/z0gfIaSkze5fBk2NnnLCmOyS8Lomlwmtrvq/a53BCuEm0yzSOBHCkmrS0TdAeSuN8yAAyFG7xs+JEjiqjPTNCpZYgIccNs8jZ1R12vI1yy/4lfowulxFh07nK+60MQy3dItggzlMgCwP8lglsGjAc4NKT9We8Jo68QavPddGsUkvvyQSDqmKwE8iXuHGdd/I5GIx3+qnH+4rPV0hWRMVZBkwj59vRglWzG91vp4Q/72aXoR+pMqgg2wZi3sucgjfhC5BLL6ajoLrwAEqX4eV2PbO7oyk5fxyWx9n4sXb72JuYwJtYVsCuotU8ZclO0SuHUXwyLd7BALw5X5yAA6Rfu7X3gwjoatCuVwyEBMiw9QoBxQe3xxLUfdDua+AVB+79nHuCt0E+/G4tG33vfCKMV/9Zo2yJPUxsFAz89ZPA9xwQLvYR93qBjB4Xju34ZIJ+827SZhsnkwtVdsoI4JJOjdrcbChK7TD5RIyx2A8jSMfrQANqKp4eRTzsUIA0cw0mUaK2Zwpj3Z4UfsKN9QUi7QGZoTlAAEXaDKQB2cuU+s=
+  on:
+    tags: true
+    repo: miyoda/express-microservice-auth
