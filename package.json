@@ -7,7 +7,7 @@
     "server": "node example/app.js",
     "debug": "node-debug example/app.js",
     "dev": "nodemon example/app.js",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Warn: no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
