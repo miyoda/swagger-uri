@@ -9,3 +9,8 @@ deploy:
   on:
     tags: true
     repo: miyoda/express-microservice-auth
+notifications:
+  email: false
+  slack:
+    on_success: always
+    on_failure: always
