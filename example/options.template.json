@@ -1,0 +1,44 @@
+{
+  "api_keys": ["1234"]
+  ,"authOpts": {
+    "scope": []
+  }
+  ,"jwt": {
+    "secretOrKey": "ssssssssssssh",
+    "expiresInSeconds": 30
+  }
+  ,"facebook": {
+    "enableRedirect": false,
+    "enableToken": false,
+    "clientID": "--------",
+    "clientSecret": "---------"
+  }
+  ,"google": {
+    "enableRedirect": false,
+    "enableToken": false,
+    "enableAuthcode": false,
+    "clientID": "------",
+    "clientSecret": "------"
+  }
+  ,"twitter": {
+    "enableRedirect": false,
+    "enableToken": false,
+    "clientID": "------",
+    "clientSecret": "------"
+  }
+  ,"instagram": {
+    "enableRedirect": false,
+    "enableToken": false,
+    "clientID": "------",
+    "clientSecret": "------"
+  }
+  ,"github": {
+    "enableRedirect": false,
+    "enableToken": false,
+    "clientID": "------",
+    "clientSecret": "------"
+  }
+  ,"local": {
+    "enable": false
+  }
+}

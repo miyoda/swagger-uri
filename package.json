@@ -34,11 +34,25 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "extend": "^3.0.0",
+    "jsonwebtoken": "^7.1.9",
     "lodash": "^4.16.6",
     "mongoose": "^4.6.6",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-facebook-token": "^3.3.0",
+    "passport-github": "^1.1.0",
+    "passport-google-authcode": "^0.1.4",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-google-token": "^0.1.2",
+    "passport-instagram": "^1.0.0",
+    "passport-jwt": "^2.2.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4",
     "resourcejs": "^1.4.1",
     "swagger-jsdoc": "^1.8.1",
-    "swagger-tools": "^0.10.1"
+    "swagger-tools": "^0.10.1",
+    "unirest": "^0.5.1",
+    "yyyy-mm-dd": "^1.0.1"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"

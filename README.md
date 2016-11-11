@@ -4,3 +4,16 @@
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)   
 Express microservice for local and social auth with passport and mongoose
 ==============================================================
+
+# Using microservice
+There are an example of use in "example/app.js"
+
+# Config
+Copy, edit and rename the file "example/options.template.json"
+
+# TODO
+-Implement Local login
+-Test Twitter login
+-Test Instagram login
+-Test GitHub login
+-Implement automatic tests
