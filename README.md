@@ -5,6 +5,10 @@
 Express microservice for local and social auth with passport and mongoose
 ==============================================================
 
+# Install
+Execute:
+> npm install --save express-microservice-auth
+
 # Using microservice
 There are an example of use in "example/app.js"
 
