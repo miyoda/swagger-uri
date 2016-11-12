@@ -1,0 +1,39 @@
+{
+  "name": "swagger-utils",
+  "version": "1.0.2",
+  "description": "Util methods for swagger with node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node-debug index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Warn: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyoda/swagger-utils.git"
+  },
+  "keywords": [
+    "express",
+    "microservice",
+    "mongo",
+    "mongoose",
+    "auth",
+    "login",
+    "social",
+    "local",
+    "passport"
+  ],
+  "author": "=",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miyoda/swagger-utils/issues"
+  },
+  "homepage": "https://github.com/miyoda/swagger-utils#readme",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
