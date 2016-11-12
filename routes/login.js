@@ -384,7 +384,7 @@ module.exports = function(app, db, options) {
     // Import swaggerDefinitions
     swaggerDefinition: swaggerDefinition,
     // Path to the API docs
-    apis: ['./routes/login.js'],
+    apis: ['./routes/login.js', './**/express-microservice-auth/routes/login.js'],
   });
 
 }

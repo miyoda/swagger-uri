@@ -90,6 +90,6 @@ module.exports = function(app, db, options) {
     // Import swaggerDefinitions
     swaggerDefinition: swaggerDefinition,
     // Path to the API docs
-    apis: ['./routes/more.js'],
+    apis: ['./routes/more.js', './**/express-microservice-auth/routes/more.js'],
   });
 }

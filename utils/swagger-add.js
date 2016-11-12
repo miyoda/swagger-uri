@@ -2,7 +2,7 @@ module.exports = function(swaggerDefinition, swaggerExtra) {
   var extend = require('extend');
   var concat = require('./concat-unique');
 
-  console.log('swagger-add(',swaggerDefinition,',',swaggerExtra,')');
+  //console.log('swagger-add(',swaggerDefinition,',',swaggerExtra,')');
 
   swaggerDefinition.definitions = extend(swaggerDefinition.definitions, swaggerExtra.definitions);
 
