@@ -13,8 +13,10 @@ Execute:
 There are an example of use in "example/app.js"
 For run in development the example execute:
 > npm run dev
+
 For debug the example execute:
 > npm run debug
+
 For serve the example execute:
 > npm run debug
 
