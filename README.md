@@ -11,13 +11,19 @@ Execute:
 
 # Using microservice
 There are an example of use in "example/app.js"
+For run in development the example execute:
+> npm run dev
+For debug the example execute:
+> npm run debug
+For serve the example execute:
+> npm run debug
 
 # Config
 Copy, edit and rename the file "example/options.template.json"
 
 # TODO
--Implement Local login
--Test Twitter login
--Test Instagram login
--Test GitHub login
--Implement automatic tests
+- Implement Local login
+- Test Twitter login
+- Test Instagram login
+- Test GitHub login
+- Implement automatic tests
