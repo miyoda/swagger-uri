@@ -4,7 +4,7 @@
   "description": "express microservice for local and social auth with passport and mongoose",
   "main": "index.js",
   "scripts": {
-    "server": "node example/app.js",
+    "start": "node example/app.js",
     "debug": "node-debug example/app.js",
     "dev": "nodemon example/app.js",
     "test": "echo \"Warn: no test specified\" && exit 0"

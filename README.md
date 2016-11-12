@@ -17,8 +17,8 @@ For run in development the example execute:
 For debug the example execute:
 > npm run debug
 
-For serve the example execute:
-> npm run debug
+For simple start the example execute:
+> npm run start
 
 # Config
 Copy, edit and rename the file "example/options.template.json"
