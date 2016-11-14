@@ -1,6 +1,6 @@
 {
   "name": "swagger-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Util methods for swagger with node.js",
   "main": "index.js",
   "scripts": {
