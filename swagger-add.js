@@ -5,6 +5,7 @@ module.exports = function(swaggerDefinition, swaggerExtra) {
   //console.log('swagger-add(',swaggerDefinition,',',swaggerExtra,')');
 
   swaggerDefinition.definitions = extend(swaggerDefinition.definitions, swaggerExtra.definitions);
+  swaggerDefinition.securityDefinitions = extend(swaggerDefinition.securityDefinitions, swaggerExtra.securityDefinitions);
 
   if (typeof swaggerDefinition.tags == 'undefined') {
     swaggerDefinition.tags = [];
